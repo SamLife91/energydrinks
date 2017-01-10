@@ -1,0 +1,175 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,li {
+	list-style: none;
+}
+body {
+	font-size: 13px;
+	font-family: 'Lato', sans-serif; 
+	background: url(../images/bodyBG.jpg) no-repeat 0 0;
+	background-size: cover;
+	height: 100%;
+}
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+}
+.shell {
+	width: 90%;
+	margin: 0 auto;
+	background: rgba(160,209,39,0.2);
+	margin-top:30px;
+	margin-bottom:30px;
+	min-height:300px;
+}
+.overlay {
+	background: rgba(0,0,0,.4);
+}
+
+/* HEADER */
+header {
+	width: 100%;
+	height: 200px;
+	z-index: 3;
+}
+.headBanner {
+	background: #c3c3c3 url(../images/headerBG.jpg) no-repeat 0 0;
+	background-size: cover;
+	width: 100%;
+	height: 170px;
+	position: relative;
+	-webkit-box-shadow: inset 0 0 18px 3px #fff;
+	box-shadow: inset 0 0 18px 3px #fff;
+}
+.headBanner h1 a{
+	padding-top: 60px;
+	display: inherit;
+	font-size: 55px;
+	text-align: center;
+	color:yellow;
+}
+/* nav */
+nav ul {
+	display: flex;
+}
+nav li {
+ 	width: 20%;
+ 	text-align: center;
+ 	background: #000000;
+ }
+ nav li:after:last-child {
+ 	clear: both;
+ }
+ nav li a {
+ 	display: inline-block;
+ 	width: 50%;
+ 	padding: 15px;
+ 	color: #c3c3c3;
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ }
+ .main-nav li.dropdown {
+ 	position: relative;
+ }
+ .main-nav li.dropdown:hover .admin-actions {
+ 	display: block;
+ }
+ ul.admin-actions {
+ 	display: none;
+ 	position: absolute;
+ 	top:100%;
+ 	left: 0;
+ 	width: 100%;
+ 	transition: all 1.2s ease;
+ }
+ ul.admin-actions li {
+	display: block;
+	width: 100%;
+	color: #fff;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: 700;
+ }
+
+ /* form */
+ .form-wrapper label {
+ 	color:black;
+ }
+ .form-wrapper {
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ 	margin: 0 auto;
+ 	width: 80%;
+ 	background: rgba(207,195,195,.7);
+ 	padding-top: 200px;
+ 	padding-bottom: 200px;	
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+ 	border-radius: 8px;
+ 	box-shadow:inset 0px 0px 30px 0px #ffe600;
+ }
+ .form-row {
+ 	width: 60%;
+ 	margin: 15px auto;
+ 	text-align: center;
+ }
+ .form-row label {
+ 	margin: 10px;
+ 	text-align: left;
+ 	display: block;
+ 	font-size: 15px;
+ 	font-weight: 700;
+ }
+ .form-row input {
+ 	padding: 5px;
+ 	border-radius: 8px;
+ 	height: 30px;
+ 	font-size: 15px;
+ 	width: 100%;
+ }
+ .btn-holder {
+ 	width: 100%;
+ 	text-align: center;
+ }
+ button.submit {
+ 	font-size: 33px;
+ 	padding: 10px 15px;
+ 	text-transform: uppercase;
+ 	border-radius: 8px;
+ 	color: #fff;
+ 	background: #000;
+ }
+ .errorPage {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background: red;
+ 	color: #ffff;
+ 	font-size: 40px;
+ 	font-weight: 700;
+ 	z-index: 3;
+ 	text-align: center;
+ }
+ .btn.rounded {
+ 	display: inline-block;
+ 	padding: 5px 10px;
+ 	font-size: 30px;
+ 	color: #000;
+ 	background: orange;
+ 	border-radius: 15px;
+ }
+ .btn.rounded:hover {
+ 	background: #000;
+ 	color:orange;
+ }
