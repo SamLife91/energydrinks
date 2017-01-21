@@ -19,9 +19,6 @@
 			</ul>
 		</li>
 		<?php endif ?>
-		<li>
-			<a href="">about</a>
-		</li>
 			<?php if(isset($_SESSION['name']) and $_SESSION['name']) :?>
 		<li>
 			<a href="/logout.php">Logout</a>
