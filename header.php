@@ -1,3 +1,5 @@
+<?php include 'page.php'; ?>
+<?php include 'functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-		<?php include 'page.php'; ?>
 </head>
 <body>
 <header>
@@ -17,4 +18,11 @@
 		<?php include 'menu.php'; ?>
 	</div>
 </header>
+<?php include 'DB.php';
+		$conn= new Database();
+		if(!$conn->connect()){
+			echo ' DB ERROR ';
+			exit;
+		}
+?>
 	
