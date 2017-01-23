@@ -88,9 +88,9 @@ nav ul {
 	align-items: center;
 }
 nav li {
- 	width: 25%;
  	text-align: center;
  	background: #000;
+ 	flex:1;
  }
  nav li:after:last-child {
  	clear: both;
