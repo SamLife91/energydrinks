@@ -11,15 +11,15 @@
 	<div class="content">
 	<div class="article">
 		<div class="article-title">
-			<h2><?= $resultArr['post_title'] ?></h2>
+			<h2><?= $resultArr[0]['post_title'] ?></h2>
 		</div>
 		<div class="article-content">
 			<p>
-				<?= $resultArr['post_content'] ?>
+				<?= $resultArr[0]['post_content'] ?>
 			</p>
 		</div>
 		<div class="article-image">
-			<img src="<?= $dir ?><?= $resultArr['post_image'] ?>" alt="">
+			<img src="<?= $dir ?><?= $resultArr[0]['post_image'] ?>" alt="">
 		</div>
 	</div>
 	</div>

@@ -32,14 +32,14 @@
 		</h3>
 		<div class="form-row">
 			<label for="post_title">Title:</label>
-			<input class="form-control" type="text" name="post_title" placeholder="Title" value="<?= $resultArr['post_title']?>">
+			<input class="form-control" type="text" name="post_title" placeholder="Title" value="<?= $resultArr[0]['post_title']?>">
 		</div>
 		<div class="form-row">
 			<label for="description">description</label>
-			<textarea name="description" cols="30" rows="10" value="<?= $resultArr['post_content']?>"></textarea>
+			<textarea name="description" cols="30" rows="10" value="<?= $resultArr[0]['post_content']?>"></textarea>
 		</div>
 		<div class="form-row">
-			<img src="<?= $dir ?><?= $resultArr['post_image']?>" alt="">
+			<img src="<?= $dir ?><?= $resultArr[0]['post_image']?>" alt="">
 		</div>
 		<div class="form-row">
 			<label for="uploadImg">Upload Image</label>

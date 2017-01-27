@@ -114,7 +114,7 @@ class Database
                         else if(mysqli_num_rows($query) < 1)
                             $this->result = null;
                         else
-                            $this->result[$key[$x]] = $r[$key[$x]];
+                            $this->result[0][$key[$x]] = $r[$key[$x]];
                     }
                 }
             }
@@ -266,9 +266,9 @@ class Database
         if($res){
             $result=$this->getResult();
             if(count($result)){
-                $_SESSION['name']=$result['name'];
-                $_SESSION['admin']=$result['is_admin'];
-                $_SESSION['id']=$result['user_id'];
+                $_SESSION['name']=$result[0]['name'];
+                $_SESSION['admin']=$result[0]['is_admin'];
+                $_SESSION['id']=$result[0]['user_id'];
                 return true;
             }else{
                 return false;
