@@ -17,7 +17,7 @@
 	<div class="comment">
 		<div class="commentName">
 			<h5>
-				FROM: <?= $authors[$resultArr[$i]['author_id']]?>
+				FROM: <?= $authors[$resultArr[$i]['author_id']]?> 
 			</h5>
 		</div>
 		<div class="comment-content">

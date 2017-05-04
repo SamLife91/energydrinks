@@ -13,6 +13,7 @@
 			$authors[$authorArr[$j]['user_id']]= $authorArr[$j]['name'];
 		}
 		for($i=0; $i<count($resultArr);$i++){
+			var_dump($resultArr[$i]['post_id']);
 		?>
 		<div class="articles">
 			<div class="article">

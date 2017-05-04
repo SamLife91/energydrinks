@@ -109,12 +109,12 @@ class Database
                     // Sanitizes keys so only alphavalues are allowed
                     if(!is_int($key[$x]))
                     {
-                        if(mysqli_num_rows($query) > 1)
+                        // if(mysqli_num_rows($query) > 1)
                             $this->result[$i][$key[$x]] = $r[$key[$x]];
-                        else if(mysqli_num_rows($query) < 1)
-                            $this->result = null;
-                        else
-                            $this->result[0][$key[$x]] = $r[$key[$x]];
+                        // else if(mysqli_num_rows($query) < 1)
+                            // $this->result = null;
+                        // else
+                            // $this->result[$key[$x]] = $r[$key[$x]];
                     }
                 }
             }
@@ -249,6 +249,7 @@ class Database
      $is_admin = false;
         $where = 'is_admin ='.(int)$user_id;
          $res = $this->select('users', '*', $where);
+         var_dump($res);
          if($res){
             if($this->result['is_admin']==1){
                 return true;

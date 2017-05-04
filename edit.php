@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
-<div class="shell" style="">
+<div class="shell">
 	<div class="content edit">
 		<?php
 		//select from db 
-		$result = $conn->select('posts','*');
+		$result = $conn->select('posts','*',null,'post_id DESC');
 		//for ....
 		$resultArr = $conn->getResult();
 		$author = $conn->select('users','user_id, name');

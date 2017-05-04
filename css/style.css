@@ -72,6 +72,7 @@ header {
 	text-align: center;
 	color:#e2e107;
 	text-shadow: 0 0 22px #e04b10;
+	font-family: 'Architects Daughter', cursive;
 	transition: all .8s ease;
 }
 .headBanner h1 a:hover {
@@ -387,4 +388,30 @@ button.comment {
 .content.edit .action a:hover,
 .content.del .action a:hover {
 	color: #fff;
+}
+.article-title h2 a:hover {
+	color: burlywood;
+	transition: all .2s ease;
+	text-shadow: 2px 2px 2px black;
+}
+/* responsive */
+@media (max-width:600px) {
+	header {
+		height: auto !important;
+	}
+	.headBanner {
+		height: 60%;
+	}
+	.headBanner h1 a {
+		font-size: 100%;
+	}
+	.article-img {
+		width: 20% !important;
+		float: none !important;
+		margin: 0 auto;
+	}
+	.article-content {
+		width: 100% !important;
+		float: none !important;
+	}
 }

@@ -31,3 +31,10 @@
 </div>
 
 <?php include 'footer.php'; ?>
+<style>
+	.article-image {
+		width: 10%;
+		height: auto;
+		margin:0 auto;
+	}
+</style>
