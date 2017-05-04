@@ -414,4 +414,11 @@ button.comment {
 		width: 100% !important;
 		float: none !important;
 	}
+	#postin .content {
+		width: 100% !important;
+	}
+	.commentSection{
+		width: 100% !important;
+	}
+
 }
